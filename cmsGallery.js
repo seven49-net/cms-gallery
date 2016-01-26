@@ -1,5 +1,5 @@
 ///////////////////////
-// cmsGallery() version 1.0
+// cmsGallery() version 1.1
 //////////////////////
 var cmsGallery = function(params){
 	if($('body').find('.app-gallery-cms').length) {
@@ -17,8 +17,12 @@ var cmsGallery = function(params){
 		// get correct language script
 		var langExtension = function(arr){
 			var path = location.pathname;
-			var lang = "de";
-			if (path !== "/") {
+			var lang;
+			if (path === "/") {
+				lang = "de";
+			} else if (path.indexOf('/_temp/') > -1) {
+				lang = path.substr(7, 2);
+			} else {
 				lang = path.substr(1, 2);
 			}
 			var key,
