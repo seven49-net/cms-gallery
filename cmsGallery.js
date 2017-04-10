@@ -1,5 +1,5 @@
 ///////////////////////
-// cmsGallery() version 1.1
+// cmsGallery() version 1.2
 //////////////////////
 var cmsGallery = function(params){
 	if($('body').find('.app-gallery-cms').length) {
@@ -34,8 +34,8 @@ var cmsGallery = function(params){
 			}
 			return out;
 		};
-		var css = '<link id="lightbox-css" rel="stylesheet" type="text/css" href="http://cdn.seven49.net/common/js/jquery/plugins/lightbox/css/lightbox.css" />';
-		var js = '<script type="text/javascript" id="lightbox-js" src="http://cdn.seven49.net/common/js/jquery/plugins/lightbox/js/lightbox.js"></script>';
+		var css = '<link id="lightbox-css" rel="stylesheet" type="text/css" href="//cdn.seven49.net/common/js/jquery/plugins/lightbox/css/lightbox.css" />';
+		var js = '<script type="text/javascript" id="lightbox-js" src="//cdn.seven49.net/common/js/jquery/plugins/lightbox/js/lightbox.js"></script>';
 
 
 
